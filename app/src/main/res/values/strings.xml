@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MCQ App</string>
+    <string name="select_category_prompt">Select Category</string>
+    <string name="select_subcategory_prompt">Select Sub-Category</string>
+
+    <!-- For QuizActivity -->
+    <string name="submit_answer_button">Submit Answer</string>
+    <string name="next_question_button">Next Question</string>
+    <string name="show_results_button">Show Results</string>
+    <string name="please_select_answer">Please select an answer</string>
+    <string name="question_progress_format">Question %1$d/%2$d</string> <!-- e.g., Question 1/10 -->
+    <string name="no_questions_found">No questions found for the selected criteria.</string>
+    <string name="quiz_finished_score_format">Quiz Finished!\nYour score: %1$d / %2$d</string>
+    <string name="back_to_main_menu_button">Back to main menu</string>
+    <string name="question_progress_short_format">%1$d/%2$d</string> <!-- e.g., 1/10 -->
+</resources>

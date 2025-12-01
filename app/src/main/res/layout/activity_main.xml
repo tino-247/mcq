@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    tools:context=".ui.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MCQ Trainer"
+        android:textSize="28sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="12dp"
+        android:prompt="@string/select_category_prompt"/>
+
+    <Spinner
+        android:id="@+id/spinnerSubCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:layout_marginBottom="16dp"
+        android:prompt="@string/select_subcategory_prompt"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilWeakThreshold"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Weak Question Streak Threshold (e.g., 3)"
+        android:layout_marginBottom="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etWeakThreshold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="3" /> <!-- Default value -->
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/cbOnlyWeak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Only Train Weak Questions (Recent Streak &lt; 3)"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStartFilteredQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Quiz with Filters"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnStartFullQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Full Quiz"
+    android:layout_marginBottom="16dp"/>
+
+    <!-- REMOVED btnStartWeakQuiz -->
+
+    <Button
+        android:id="@+id/btnViewStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Statistics"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnClearDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:text="Clear All Data (Reset Database)"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnExportDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export Database to CSV"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnExportSqliteDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Export SQLite DB File"/>
+
+    <Button
+        android:id="@+id/btnImportDatabaseCsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Import Database from CSV"/>
+
+    <Button
+        android:id="@+id/btnImportSqliteDb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Import SQLite DB File"/>
+</LinearLayout>

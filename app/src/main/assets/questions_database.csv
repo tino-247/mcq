@@ -1,0 +1,8 @@
+Kategorie,Unter-Kategorie,Frage #,Frage,Antwort A,Antwort B,Antwort C,Antwort D,Richtige Antwort,Abbildung
+Geographie,Hauptstädte,G001,"Was ist die Hauptstadt von Deutschland?",Berlin,München,Hamburg,Frankfurt,A,
+Geographie,Flüsse,G002,"Welcher Fluss fließt durch Paris?",Themse,Seine,Donau,Rhein,B,
+Geschichte,Weltkriege,H001,"In welchem Jahr begann der Erste Weltkrieg?",1914,1918,1939,1945,A,
+Wissenschaft,Physik,S001,"Was ist die Formel für Energie laut Einstein?",E=mc,E=mc^2,E=m/c,E=m^2c,B,1000
+Wissenschaft,Biologie,S002,"Wie viele Chromosomenpaare hat ein Mensch normalerweise?",23,24,46,48,A,
+Geographie,Hauptstädte,G003,"Was ist die Hauptstadt von Japan?",Peking,Seoul,Tokio,Bangkok,C,
+Geographie,Berge,G004,"Welcher ist der höchste Berg der Welt?",K2,Mount Everest,Kangchendzönga,Lhotse,B,1010
